@@ -1,0 +1,34 @@
+name = "idkaboutbytes/rx"
+version = "1.0.7"
+description = "Rx package for Roblox."
+license = "MIT"
+authors = ["idkaboutbytes"]
+repository = "https://github.com/idkaboutbytes/rx"
+includes = [
+    "pesde.toml",
+    "README.md",
+    "CHANGELOG.md",
+    "default.project.json",
+    "src/**/*.luau",
+]
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+
+[dependencies]
+Subscription = { repo = "idkaboutbytes/subscription", rev = "v1.0.4" }
+Observable = { repo = "idkaboutbytes/observable", rev = "v1.0.3" }
+Maid = { repo = "idkaboutbytes/maid", rev = "v1.1.6" }
+Promise = { repo = "idkaboutbytes/promise", rev = "v2.1.5" }
+Symbol = { repo = "idkaboutbytes/symbol", rev = "v1.0.4" }
+DuckTypeUtils = { repo = "idkaboutbytes/ducktypeutils", rev = "v1.0.5" }
+Signal = { wally = "kineticwallet/lemon-signal", version = "^1.10.0" }
+CancellableDelay = { repo = "idkaboutbytes/cancellabledelay", rev = "v1.0.4" }
+Throttle = { repo = "idkaboutbytes/throttle", rev = "v1.0.4" }
+Loader = { repo = "idkaboutbytes/loader", rev = "v1.2.5" }
